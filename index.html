@@ -80,8 +80,7 @@
                 </div>
     
                 <div class="tm-media">
-                    <!-- Add data-popup-video tag to allow video on click of image-->
-                    <img src="img/gallery/tn/img-prototype.png" alt="Intro image" data-popup-video="videos/Stewart-Platform-Showcase-480.mp4">
+                    <img src="img/gallery/tn/img-prototype.png" alt="Intro image">
                     <div class="tm-media-body">
                         <h2><a href="#" class="tm-text-primary">Dynamic Medical Lung Phantom for Radiotherapy Planning</a></h2>
                         <p class="tm-mb-20 tm-text-small">
@@ -617,24 +616,6 @@
                 type: 'image',
                 gallery: {
                     enabled: true
-                }
-            });
-            // Initialize Magnific Popup for video popups
-            $('.tm-media-body img').each(function() {
-                var videoUrl = $(this).data('popup-video');
-                if (videoUrl) {
-                    $(this).magnificPopup({
-                        type: 'iframe',
-                        items: {
-                            src: videoUrl
-                        },
-                        iframe: {
-                            markup: '<div class="mfp-iframe-scaler">' +
-                                        '<div class="mfp-close"></div>' +
-                                        '<iframe class="mfp-iframe" frameborder="0" allowfullscreen></iframe>' +
-                                    '</div>'
-                        }
-                    });
                 }
             });
         });
