@@ -578,21 +578,20 @@
 
             /****************Owl Carousel*********************/
             $(".owl-carousel").owlCarousel({
-                loop:true,
-                center: true,
-                margin:10,
+                loop: false, // Set loop to false to prevent cloning of items
+                margin: 10,
                 stagePadding: 50,
-                autoWidth:true,
-                nav:true,
-                responsive:{
-                    0:{
-                        items:1
+                autoWidth: true,
+                nav: true,
+                responsive: {
+                    0: {
+                        items: 1
                     },
-                    600:{
-                        items:3
+                    600: {
+                        items: 3
                     },
-                    1000:{
-                        items:5
+                    1000: {
+                        items: 5
                     }
                 }
             });
