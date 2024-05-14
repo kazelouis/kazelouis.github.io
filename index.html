@@ -431,9 +431,6 @@
                     <div class="item">
                         <img src="img/gallery/tn/img-02.jpg" alt="Image 1">
                     </div>
-                    <div class="item">
-                        <img src="img/gallery/tn/img-03.jpg" alt="Image 1">
-                    </div>
                     <!-- Add more items as needed -->
         
                 </div>
@@ -631,10 +628,17 @@
         });
     </script>
 
+    <style>
+        .owl-carousel .item img {
+            height: 480px; /* Set the height of all images to 480 pixels */
+        }
+    </style>
+    
     <script>
         $(document).ready(function(){
             $(".owl-carousel").owlCarousel({
                 loop:true,
+                center: true,
                 margin:10,
                 stagePadding: 50,
                 autoWidth:true,
