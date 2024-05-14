@@ -424,8 +424,14 @@
                         <video controls>
                             <source src="videos/Stewart-Platform-Showcase-480.mp4" type="video/mp4">
                             Your browser does not support the video tag.
-                        </video>
-                    </div>      
+                        </video>                        
+                    </div> 
+                    <div class="item">
+                        <video controls>
+                            <source src="videos/jazz-piano-480.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>                        
+                    </div>                    
                 </div>
             </div>
             <!-- --------------------New added top carousel-------------------------------- -->
@@ -571,7 +577,7 @@
             /****************Owl Carousel*********************/
             $(".owl-carousel").owlCarousel({
                 center: true,
-                loop: true,
+                loop: false, //prevent duplicate
                 margin: 10,
                 stagePadding: 50,
                 autoWidth: true,
