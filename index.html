@@ -334,8 +334,9 @@
                     </figure>
 
                      <!-- Skill 16 -->
-                    <figure class="effect-goliath tm-gallery-item">                      
-                        <img src="img/gallery/tn/img-18.jpg" alt="Image"/>                                              
+                    <figure class="effect-goliath tm-gallery-item">                
+                        <!-- Add data-video tag to allow video src-->
+                        <img src="img/gallery/tn/img-18.jpg" data-video="video/Stewart-Platform-Showcase-480.mp4" alt="Image"/>                                              
                         <figcaption>
                             <h2>Jazz Musician</h2>
                             <p>RCM Level 10 Pianist</p>
@@ -617,6 +618,19 @@
                 gallery: {
                     enabled: true
                 }
+                    
+                callbacks: {
+                    elementParse: function(item) {
+                        // Check if the clicked item has a data-video attribute
+                        if(item.el.attr('data-video')) {
+                            // Replace the type with iframe
+                            item.type = 'iframe';
+                            // Replace src with the video source
+                            item.src = item.el.attr('data-video');
+                        }
+                    }
+                }
+            
             });
         });
     </script>
