@@ -524,18 +524,18 @@
                 loop: false, //prevent duplicate
                 margin: 10,
                 stagePadding: 50,
-                merge:true,
-                autoWidth: false,
+                merge:false, //prevent squished together videos
+                autoWidth: false, //prevent second row
                 nav: true,
                 responsive: {
                     0: {
-                        mergeFit:true
+                        item:1
                     },
                     600: {
-                        mergeFit:true
+                        item:3
                     },
                     1000: {
-                        mergeFit:true
+                        item:5
                     }
                 }
             });
