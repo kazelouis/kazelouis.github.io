@@ -515,28 +515,23 @@
                 loop: false, //prevent duplicate
                 margin: 10,
                 stagePadding: 50,
+                merge:true,
                 autoWidth: true,
                 nav: true,
                 responsive: {
                     0: {
-                        items: 1
+                        mergeFit:true
                     },
                     600: {
-                        items: 3
+                        mergeFit:true
                     },
                     1000: {
-                        items: 5
+                        mergeFit:true
                     }
                 }
             });
         });
     </script>
-
-    <style>
-        .owl-carousel .item img {
-            height: 480px; /* Set the height of all images to 480 pixels */
-        }
-    </style>
     
     
 </body>
