@@ -18,10 +18,7 @@
         .owl-item video {
             width: 100%;
             height: auto;
-        }
-    
-        .tm-nav {
-            z-index: 9999; /* Ensure the navigation bar appears above the carousel */
+            max-height: 100vh; /* Set maximum height to full viewport height */
         }
     </style>
 </head>
@@ -527,10 +524,10 @@
                 }
             
             });
-
+    
             /****************Owl Carousel*********************/
             $(".owl-carousel").owlCarousel({
-                center: true,
+                center: false, //don't need empty space on the left
                 loop: false, //prevent duplicate
                 margin: 10,
                 stagePadding: 50,
